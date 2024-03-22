@@ -1,0 +1,621 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info-item {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info-item h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .contact-info-item p {
+    margin-top: 5px;
+    color: #666;
+  }
+  
+  .contact-info-item i {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .trip-package {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .trip-package h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .trip-package p {
+    margin-top: 0;
+    color: #666;
+  }
+  
+  .trip-package .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  .trip-package .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .trip-package .btn:hover {
+    background-color: #45a049;
+  }
+  
+
+.background-image {
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('tourisam.jpg');
+    background-size: cover;
+    color: #fff;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 800px;
+}
+
+.background-image h1 {
+    color: #ffffff; /* Text color */
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below the heading */
+}
+/* Default font sizes for welcome and to */
+.welcome h1 {
+    font-size: 100px; /* Adjust as needed */
+    color: aquamarine;
+}
+
+.to h2 {
+    font-size: 30px; /* Adjust as needed */
+    color: black;
+}
+.to h3 {
+    font-size: 30px; /* Adjust as needed */
+    color: blanchedalmond;
+}
+
+.navbar {
+    /* Background color */
+    overflow: hidden;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd; /* Hover background color */
+    color: black;
+}
+.content {
+    display: none; /* Hide the content by default */
+    padding: 20px;
+    border-radius: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+   
+}
+button {
+    background-color: #ff3333; 
+    color: white; 
+    padding: 10px 20px; 
+    border: solid; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-top: 40px;
+    margin-right: 80px;
+    margin-left: 20px;
+    
+}
+
+/* Styling for the button on hover */
+button:hover {
+    background-color: #2656b7; /* Darker blue background color */
+}
+.content p:hover{
+    font-size: large;
+    color: rgb(197, 197, 239);
+    font-weight: bold;
+}
+.top-values {
+    text-align: left;
+    margin-left: 100px;
+}
+.explore h1 {
+    margin-top: 30px; 
+    font-size: 70px; 
+}
+.Image-continer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-box {
+    margin-top: 40px;
+    width: 30%; 
+    height: auto; 
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.navbar1 {
+    text-align: left;
+    margin-left: 20px; 
+}
+
+/* Style for navbar links */
+.navbar1 a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+}
+
+/* Hover effect for navbar links */
+.navbar1 a:hover {
+    border-color: #e4e80b;
+    background-color: darkkhaki;
+}
+.image-box {
+    margin-top: 40px;
+    width: 30%; 
+    height: auto; 
+    position: relative;
+}
+
+.image-box .p1 {
+    position: absolute;
+    top: 20px; 
+    left: 10px;
+    color: white; 
+    font-weight: bold; 
+    font-size: 30px; 
+    margin-left: 30px;
+}
+.image-box {
+    margin-top: 40px;
+    width: 30%; 
+    height: auto; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.10s; 
+}
+
+.image-box:hover img {
+    transform: perspective(500px) rotateY(10deg); 
+}
+
+.image-box .p1 {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 20px; 
+}
+.Image-continer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+
+.image-box {
+    width: 30%;
+    height: 300px; 
+    overflow: hidden; 
+    position: relative;
+}
+.explore2 h1 {
+    margin-top: 30px; 
+    font-size: 70px; 
+    margin-left: 80px;
+}
+.train{
+   margin-top: 5px;
+   padding: 5px;
+}
+.Packages{
+    margin-left: 50px;
+    font-family: Verdana, sans-serif;
+    margin-top: 30px; 
+    font-size: 50px; 
+    
+}
+.train {
+    position: relative;
+    display: inline-block;
+}
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+}
+.ee{
+     margin-right: 20px;
+     padding: 50px;
+}
+
+.choose > div {
+    width: calc(23.33% - 5px); /* Adjust width based on your preference */
+    height: 500px; /* Set height to 100px */
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    transition: box-shadow 0.3s ease; /* Add transition for hover effect */
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.choose > div:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover */
+}
+.ee.ee1 {
+    background-color: #ffcccc; /* Light red */
+}
+
+.ee.ee2 {
+    background-color: #ccffcc; /* Light green */
+}
+
+.ee.ee3 {
+    background-color: #ccccff; /* Light blue */
+}
+
+.ee.ee4 {
+    background-color: #ffffcc; /* Light yellow */
+}
+.choose1 h1{
+    font-size: 70px;
+    margin-left: 50px;
+}
+.india{
+    display: flex;
+    margin-top: 50px;
+}
+.text{
+    width: 500px;
+    margin-left: 70px;
+    margin-right: 200px;
+    padding: 5px;
+}
+.india1{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.text p {
+    letter-spacing: 1px; /* Adjust the value as needed */
+    line-height: 1.5;
+}
+.image1{
+    align-items: end;
+}
+.india {
+    
+    border-radius: 5px; /* border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* box shadow */
+    padding: 60px; /* padding around the content */
+    margin-left: 30px;
+}
+
+.image1 img {
+    max-width: 100%; /* ensure image doesn't overflow */
+    height: auto; /* maintain aspect ratio */
+}
+.buttons{
+    margin-bottom: 30px;
+    
+}
+.wild{
+    width: 500px;
+    height: 30px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-left: 150px;
+}
+.wildlife{
+    display: flex;
+    margin-left: 30px;
+    padding: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #a9c0ed;
+}
+.questions {
+   
+    color: #252424;
+    padding: 60px;
+}
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.answer {
+    display: none;
+    letter-spacing: 1.5;
+    letter-spacing: 1px;
+}
+
+.line {
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+}
+.space {
+    margin-top: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.trainText {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 400px;
+    margin-left: 400px;
+    border-radius: 5px;
+    background-color: #c7f768;
+    transition: background-color 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.trainText:hover {
+    display: block; /* Show the element on hover */
+    background-color: #a3e4d7; /* Change background color on hover */
+}
+
+
+.packageTable{
+    margin-top: 40px;
+    margin-left: 400px;
+    
+}
+ 
+#tripBooking {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #tripBooking button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  #tripBooking button:hover {
+    background-color: #45a049;
+  }
+  
+  #bookingForm {
+    display: none;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #bookingForm.show {
+    display: block;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="date"] {
+    padding: 8px;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>') no-repeat right 8px center;
+    background-size: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .head{
+    font-size: 60px;
+    margin-left: -200px;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    margin-top: 0;
+    font-size: 24px;
+  }
+  
+  .footer p {
+    margin: 10px 0;
+  }
+  
+  .footer .highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .highlight-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer .highlight-item h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  
+  .footer .highlight-item p {
+    margin: 5px 0;
+  }
+
+ 
+
+
+

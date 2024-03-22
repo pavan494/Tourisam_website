@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="travel.css">
+    <script src="travel.js"></script>
+</head>
+<body>
+      <div class="main">
+ <div class="background-image">
+  <nav class="navbar">
+    <ul>
+        <li><a href="#home" class="nav-btn">Home</a></li>
+        <li><a href="#packages" class="nav-btn">Packages</a></li>
+        <li><a href="#hotels" class="nav-btn">Hotels</a></li>
+        <li><a href="#bus" class="nav-btn">Bus</a></li>
+        <li><a href="http://127.0.0.1:5500/new.html" class="nav-btn">Flight</a></li>
+
+        <li><a href="http://127.0.0.1:5500/nwe1.html" class="nav-btn">My Account</a></li>
+    </ul>
+</nav>
+
+    <!-- Content goes here -->
+    <div class="welcome">
+    <h1>Welcome </h1>
+    </div>
+    <div class="to">
+    <h2>to Pavan Tourisam</h2>
+    <h3>Your Gateway to Extraordinary Adventures!</h3>
+    </div>
+    <button onclick="toggleContent()">About Company</button> <!-- Button to toggle content -->
+    <div class="content" id="companyContent">
+        <p>At Pavan Tourism, we believe that travel is not just about visiting new destinations; it's about creating unforgettable experiences that enrich your life and broaden your horizons.</p>
+            <p>As a premier provider of travel services, we specialize in crafting tailor-made journeys that cater to every traveler's unique preferences and aspirations.</p>
+        <p>With a team of seasoned travel experts and a passion for exploration, we are committed to delivering exceptional service and personalized attention to each of our valued clients. </p>
+            <p>Whether you're dreaming of a relaxing beach getaway, an exhilarating adventure in the great outdoors, or a cultural immersion in a far-flung destination, we have the expertise and resources to turn your travel dreams into reality.</p>
+    </div>
+  </div>
+</div> 
+<div id="tripBooking">
+    <h2>Book Your Dream Trip</h2>
+    <button onclick="showBookingForm()">Book My Trip</button>
+    <div id="bookingForm">
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        
+        <label for="destination">Destination:</label>
+        <select id="destination" name="destination" required>
+          <option value="">Select destination...</option>
+          <option value="beach">Beach</option>
+          <option value="mountains">Mountains</option>
+          <option value="city">City</option>
+        </select>
+        
+        <label for="check-in">Check-in Date:</label>
+        <input type="date" id="check-in" name="check-in" required>
+        
+        <label for="check-out">Check-out Date:</label>
+        <input type="date" id="check-out" name="check-out" required>
+        
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" name="num-guests" min="1" required>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+<div class="top-values"> 
+    <div class="explore">
+        <h1>Explore Top Destinations by Region</h1>
+    </div>
+    <div class="navbar1">
+        <a href="#">Central India</a>
+        <a href="#">South India</a>
+        <a href="#">East India</a>
+        <a href="#">North India</a>
+        <a href="#">West India</a>
+    </div>
+
+    <div class="Image-continer">
+        <div class="image-box">
+            <img src="manali.jpg">
+            <p class="p1">Manali</p>
+        </div>
+        <div class="image-box">
+            <img src="nepal.webp">
+            <p class="p1">Nepal</p>
+        </div>
+        <div class="image-box">
+            <img src="rajasthan.jpg">
+            <p class="p1">Rajasthan</p>
+        </div>
+    </div>
+</div>
+<div class="Image-continer2">
+        <div class="image-box">
+           <img src="ooty.jpg">
+          <p class="p1">OOty</p>
+        </div>
+    <div class="image-box">
+       <img src="hyd.jpg">
+      <p class="p1">Hyderabad</p>
+    </div>
+    <div class="image-box">
+      <img src="tajmahal.jpg">
+        <p class="p1">Tajmahal</p>
+    </div>
+</div>
+  
+      <div class="explore2">
+           <h1>Top Trending Destinations</h1>
+        </div>
+        <div class="Image-continer2">
+            <div class="image-box">
+               <img src="charminar.jpg">
+              <p class="p1">charminar with 25+Packages</p>
+            </div>
+        <div class="image-box">
+           <img src="Sikkim.jpg">
+          <p class="p1">sikkim with 25+Packages</p>
+        </div>
+        <div class="image-box">
+          <img src="kerala.jpg">
+            <p class="p1">kerala with 25+ Packages</p>
+        </div>
+    </div>
+    <div class="Image-continer2">
+        <div class="image-box">
+           <img src="uttarkand.jpg">
+          <p class="p1">uttarakand With 25+ Packages</p>
+        </div>
+    <div class="image-box">
+       <img src="tailand.jpg">
+      <p class="p1">tailand With 25+ Packages</p>
+    </div>
+    <div class="image-box">
+      <img src="adhi.jpg">
+        <p class="p1">Adhi-yogi With 25+ Packages</p>
+    </div>
+</div>
+<div class="train">
+    <h1 class="Packages">Packages By Interest</h1>
+    <div class="buttons">
+        <button onclick="showData('luxury')">Luxury</button>
+        <button onclick="showData('wedding')">Wedding</button>
+        <button onclick="showData('ayurveda')">Ayurveda</button>
+        <button onclick="showData('wildlife')">Wildlife</button>
+        <button onclick="showData('hillstation')">Hill Station</button>
+        <button onclick="showData('heritage')">Heritage</button>
+        <button onclick="showData('beach')">Beach</button>
+    </div>
+    <div class="space">
+        <img src="luxury.webp" id="luxuryImage">
+        <div class="trainText" id="luxuryText">
+            <h1>Luxury Trains</h1>
+            <h3>Luxurious Rail Escapade</h3>
+            <p>Experience The Epitome Of Luxury While Traversing India's Stunning Landscapes</p>
+        </div>
+        <table class="packageTable" id="luxuryTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Luxury Package 1</td>
+                <td>$1000</td>
+                <td>5 days</td>
+                <td>Free Spa, Complimentary Meals, Guided City Tours</td>
+            </tr>
+        </table>
+        
+        <img src="wedding.webp" id="weddingImage" style="display: none;">
+        <div class="trainText" id="weddingText">
+            <h1>Wedding Celebrations</h1>
+            <h3>Making Your Special Day Memorable</h3>
+            <p>Celebrate Love in the Most Beautiful Way With Our Tailored Wedding Packages</p>
+        </div>
+        <table class="packageTable" id="weddingTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Wedding Package 1</td>
+                <td>$2000</td>
+                <td>3 days</td>
+                <td>Event Planning, Decorations, Catering</td>
+            </tr>
+        </table>
+        
+        <img src="ayurveda.webp" id="ayurvedaImage" style="display: none;">
+        <div class="trainText" id="ayurvedaText">
+            <h1>Ayurveda Retreats</h1>
+            <h3>Rejuvenate Your Body and Mind</h3>
+            <p>Indulge in Ancient Ayurvedic Therapies and Discover Inner Harmony</p>
+        </div>
+        <table class="packageTable" id="ayurvedaTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Ayurveda Package 1</td>
+                <td>$1500</td>
+                <td>7 days</td>
+                <td>Ayurvedic Treatments, Yoga Sessions, Herbal Medicines</td>
+            </tr>
+        </table>
+        
+        <img src="wildlife.jpg" id="wildlifeImage" style="display: none;">
+        <div class="trainText" id="wildlifeText">
+            <h1>Wildlife Safari</h1>
+            <h3>Explore the Untamed Wilderness</h3>
+            <p>Embark on Exciting Safaris and Witness the Majesty of Nature's Creatures</p>
+        </div>
+        <table class="packageTable" id="wildlifeTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Wildlife Safari</td>
+                <td>$1200</td>
+                <td>4 days</td>
+                <td>Safari Tours, Wildlife Photography, Accommodation</td>
+            </tr>
+        </table>
+        
+        <img src="manali.jpg" id="hillstationImage" style="display: none;">
+        <div class="trainText" id="hillstationText">
+            <h1>Hill Station Retreat</h1>
+            <h3>Discover Tranquility in the Mountains</h3>
+            <p>Escape to Serene Hill Stations and Breathe in the Fresh Mountain Air</p>
+        </div>
+        <table class="packageTable" id="hillstationTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Hill Station Retreat</td>
+                <td>$800</td>
+                <td>3 days</td>
+                <td>Trekking, Scenic Views, Local Cuisine</td>
+            </tr>
+        </table>
+        
+        <img src="her.jpg" id="heritageImage" style="display: none;">
+        <div class="trainText" id="heritageText">
+            <h1>Heritage Tour</h1>
+            <h3>Explore the Rich History and Culture</h3>
+            <p>Visit Majestic Palaces, Forts, and Temples to Uncover India's Glorious Past</p>
+        </div>
+        <table class="packageTable" id="heritageTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Heritage Tour</td>
+                <td>$900</td>
+                <td>4 days</td>
+                <td>Guided Tours, Historical Sites, Cultural Shows</td>
+            </tr>
+        </table>
+        
+        <img src="beach.jpg" id="beachImage" style="display: none;">
+        <div class="trainText" id="beachText">
+            <h1>Beach Vacation</h1>
+            <h3>Relax and Unwind by the Seaside</h3>
+            <p>Enjoy Sun, Sand, and Seafood on India's Pristine Beaches</p>
+        </div>
+        <table class="packageTable" id="beachTable" style="display: none;">
+            <tr>
+                <th>Package</th>
+                <th>Price</th>
+                <th>Duration</th>
+                <th>Benefits</th>
+            </tr>
+            <tr>
+                <td>Beach Vacation</td>
+                <td>$700</td>
+                <td>5 days</td>
+                <td>Beach Resorts, Water Sports, Sunset Cruises</td>
+            </tr>
+        </table>
+    </div>
+</div>
+  <!-- <div class="image-carousel">
+    <img src="tajmahal.jpg" alt="Image 1">
+    <img src="rajasthan.jpg" alt="Image 2">
+    <img src="uttarkand.jpg" alt="Image 3">
+  </div> -->
+<div class="choose1">
+    <h1>Why Choose Us ?</h1>
+</div>
+<div class="choose">
+    
+    <div class="ee  ee4">
+        <h1>20+ Year Experience</h1>
+        <p>Boasting over two decades in the tourism and hospitality industry, Tour My India has amassed invaluable experience that sets us apart.</p>
+    </div>
+    <div class="ee  ee1">
+        <h1>A Team of Experts</h1>
+        <p> Our experienced team at Tour My India is more than just proficient; they are destination experts for every location within the mesmerizing landscape of India. Their knowledge is an invaluable asset for every traveler..</p>
+    </div>
+    <div class="ee  ee2">
+        <h1>Verified Hotels</h1>
+        <p>We offer a meticulously selected and verified list of high-grade hotels. Our partners consistently deliver top-notch service, ensuring an exceptional experience for our guests.</p>
+    </div>
+    <div class="ee  ee3">
+        <h1>Value for Money Tours</h1>
+        <p>With Tour My India, your vacation is not just about sightseeing; it's about creating memories that last a lifetime. Our holiday packages are hassle-free and designed with a focus on value for money. Trust us to weave unforgettable experiences into your journey, ensuring every moment you spend with us is well worth it.</p>
+    </div>
+</div>
+
+  <h1 class="india1">About Incredible India</h1>
+<div class="india">
+    <div class="text">
+        <p>
+             Interesting and Intriguing, India offers incredible holiday experiences through its cultural, topography, and wildlife diversity. With these amazing and unique experiences, this south Asian country conveniently finds its way into the world tourism map as one of the finest destinations for a holistic vacation. India establishes its identity as the country of architectural masterpieces, making it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw on an India tour, there are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and grandiose of different eras in the country.
+             The diverse Indian topography adorned with the impressive Himalayas; 
+             <br>
+             <br>long stretches of coastline; expansive hot, cold and white salt deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest. Along with the best nature sightseeing tours, India offers an opportunity to visitors to have a little adventure of their own. The numerous spell-binding and less-trodden trails give trekking tour opportunities in South Asia unlike any other.
+             India Tours offers a chance to explore its biodiversity in the country's many national parks and wildlife reserves.
+             <br>
+             <br> An enthralling experience entails in the India wildlife tour packages that take tourists to the habitats of Royal Bengal Tigers, one-horned rhinos, and snow leopards amongst many rare, endangered, and unique species of flora and fauna.
+        </p>
+    </div>
+    <div class="image1">
+        <img src="varanasi.webp">
+        
+    </div>
+</div>
+<h1 class="india1">India Wild Life</h1>
+<div class="wildlife">
+    <div class="tiger">
+        <img src="wildlife.jpg">
+    </div>
+    <p class="wild">India's wildlife is a treasure trove of biodiversity, encompassing a kaleidoscope of species adapted to its varied landscapes, from dense rainforests to expansive grasslands and towering mountain ranges.<br>
+         One of the most iconic inhabitants of India's wilderness is the Bengal tiger, revered as the national animal and symbolizing the country's commitment to conservation efforts. 
+         <br>
+         <br>Roaming the dense forests of reserves like Ranthambore and Jim Corbett, these apex predators command both respect and awe.
+         Beyond the tiger, India's wildlife canvas is painted with an array of charismatic megafauna, including the Asian elephant, Indian rhinoceros, and Asiatic lion. These species, along with numerous others, find refuge in India's national parks and wildlife sanctuaries, providing sanctuary for their survival against the backdrop of habitat loss and human-wildlife conflict.</p>
+</div> 
+  
+
+  
+
+<h1 class="head">HOT SPOT PACAKES</h1>
+  <div class="container1">
+    <div class="trip-package">
+      <h2>Beach Paradise</h2>
+      <p>Relax and unwind on the pristine beaches of the Caribbean. Enjoy sun, sand, and crystal-clear waters.</p>
+      <p>Duration: 7 days</p>
+      <p>Price: <span class="price">$1500</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+    
+    <div class="trip-package">
+      <h2>Mountain Adventure</h2>
+      <p>Embark on an exhilarating journey through the majestic mountains. Hike through lush forests, explore hidden waterfalls, and camp under the stars.</p>
+      <p>Duration: 5 days</p>
+      <p>Price: <span class="price">$1200</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+    
+    <div class="trip-package">
+      <h2>City Explorer</h2>
+      <p>Discover the vibrant culture and rich history of bustling cities around the world. Visit iconic landmarks, indulge in local cuisine, and experience the excitement of urban life.</p>
+      <p>Duration: 3 days</p>
+      <p>Price: <span class="price">$800</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+    
+    <div class="trip-package">
+      <h2>Safari Adventure</h2>
+      <p>Embark on a thrilling safari adventure and witness the beauty of wildlife in their natural habitat. Explore vast savannas, encounter majestic animals, and create unforgettable memories.</p>
+      <p>Duration: 5 days</p>
+      <p>Price: <span class="price">$1800</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+    
+    <div class="trip-package">
+      <h2>Island Getaway</h2>
+      <p>Escape to a secluded island paradise and immerse yourself in tranquility. Relax on pristine beaches, snorkel in crystal-clear waters, and experience ultimate serenity.</p>
+      <p>Duration: 7 days</p>
+      <p>Price: <span class="price">$2000</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+    
+    <div class="trip-package">
+      <h2>Cultural Experience</h2>
+      <p>Immerse yourself in the rich culture and heritage of ancient civilizations. Explore historic landmarks, indulge in traditional cuisine, and witness captivating performances.</p>
+      <p>Duration: 4 days</p>
+      <p>Price: <span class="price">$1000</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  
+    <div class="trip-package">
+      <h2>Winter Wonderland</h2>
+      <p>Experience the magic of winter in a picturesque wonderland. Enjoy skiing, snowboarding, and cozy evenings by the fireplace.</p>
+      <p>Duration: 6 days</p>
+      <p>Price: <span class="price">$1600</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  
+    <div class="trip-package">
+      <h2>Desert Safari</h2>
+      <p>Embark on a desert adventure and explore the mesmerizing beauty of vast sand dunes. Enjoy camel rides, traditional Bedouin camps, and breathtaking sunsets.</p>
+      <p>Duration: 4 days</p>
+      <p>Price: <span class="price">$1400</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  
+    <div class="trip-package">
+      <h2>Historical Journey</h2>
+      <p>Travel back in time and discover the wonders of ancient civilizations. Explore archaeological sites, majestic temples, and legendary ruins.</p>
+      <p>Duration: 5 days</p>
+      <p>Price: <span class="price">$1300</span></p>
+      <a href="#" class="btn">Book Now</a>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="contact-info">
+      <div class="contact-info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h2>Visit Us</h2>
+        <p>Hyderabad Tourism Street,<br>Hyderabad, India</p>
+      </div>
+      <div class="contact-info-item">
+        <i class="fas fa-phone"></i>
+        <h2>Call Us</h2>
+        <p> +9193456789<br> +91876543210</p>
+      </div>
+      <div class="contact-info-item">
+        <i class="fas fa-envelope"></i>
+        <h2>Email Us</h2>
+        <p>pavan@example.com<br>suragani@example.com</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container3">
+      <h2>Explore with Us</h2>
+      <p>Discover the world's most amazing destinations with our expertly crafted tours and packages.</p>
+      
+      <div class="highlights">
+        <div class="highlight-item">
+          <h3>Customized Tours</h3>
+          <p>Personalized itineraries tailored to your preferences.</p>
+        </div>
+        <div class="highlight-item">
+          <h3>Expert Guides</h3>
+          <p>Knowledgeable guides with years of experience.</p>
+        </div>
+        <div class="highlight-item">
+          <h3>24/7 Support</h3>
+          <p>Assistance available round the clock for your convenience.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
